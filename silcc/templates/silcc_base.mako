@@ -58,7 +58,6 @@
 				<ul>
 					<li class="version" >v0.1 Apala</li>
 					<li class="link" ><a href="http://swift.ushahidi.com" title="overview" >About SwiftRiver</a></li>
-					<li class="link" ><a href="https://spreadsheets.google.com/a/ushahidi.com/viewform?hl=en&formkey=dHB2X3ZZSUZYTVJ0RnlFbFg2SElzQ3c6MA" title="download" >Get Swift</a></li>
 					<li class="link" ><a href="http://swift.ushahidi.com/doc/" title="notes on use, features and api" >Documentation</a></li>
 					<li class="link" ><a href="http://github.com/appfrica/silcc/" title="developers" >Developers</a></li>
 					<li class="link" ><a href="http://swift.ushahidi.com/doc/doku.php?id=faq" title="frequently asked questions" >FAQ</a></li>
@@ -93,7 +92,7 @@
 			                        <div class="column_holder" style="">
 										<div id="myBox2" >
 											<div id="developer"><H3 class="pt17">Developers</H3></div>
-											<P>SiLCC is an open source project. We invite anyone interested in working with us to join our developer community by following us on <a href="http://github.com/appfrica/silcc">Git Hub</a>.
+											<P>SiLCC is an open source project. We invite anyone interested in working with us to join our developer community by following us on <a href="http://github.com/appfria/silcc">Git Hub</a>.
 			                                </P>
 										</div>
 			                        </div>

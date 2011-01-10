@@ -1,14 +1,20 @@
 SiLCC
+=====
 
-===========
 Synopsis
-===========
+--------
+
 SiLCC aims to provide a learning NLP based relevancy filter/tagger/classifier that is 
 applied to the various information sources that Swift aggregates (RSS, twitter, SMS). 
 
-============
+Change Log
+--------
+
+* V0.1.0: Initial stable release of the software.
+
+
 Installation
-============
+------------
 
 To set up a silcc server instance:
 
@@ -64,9 +70,9 @@ $ paster serve --daemon prod.ini
 
 Look for any errors in paster.log
 
-========
-Placing your SiLCC Instance DB under version controll.
-========
+Placing your SiLCC Instance DB under version controll
+-----------------------------------------------------
+
 You may want to place your database under version control so 
 that you can easily upgrade the schema, should it evolve over time.
 

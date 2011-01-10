@@ -4,15 +4,13 @@ import urllib
 
 import simplejson
 
-def tag(text, key=None, urlbase='http://opensilcc.com/api/tag'):
+def tag(text):
     """Calls the SilCC web service API"""
     if type(text) == unicode:
         text = text.encode('utf-8')
-    values = dict(text=text)
-    if key:
-        values['key'] = key
+    values = dict(text=text, key='AAAABBBB')
     data = urllib.urlencode(values)
-    request = urllib2.Request(urlbase, data)
+    request = urllib2.Request('http://opensilcc.com/api/tag', data)
     json_response = urllib2.urlopen(request)
     json_data = json_response.read()
     json_response.close()
