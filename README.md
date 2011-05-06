@@ -138,3 +138,10 @@ Since the manage.py will be specific to your local instance it is not included i
 
 5) The Web Service API needs to have one or more valid keys in the apikey table.
 For testing purposes add a key with a valid_domains value of ``*`` (valid from all domains)
+
+Bindings
+--------
+
+For your convenience, the following language-specific API "proxy" libraries are available:
+
+* [SiLCC-PHP-Binding](https://github.com/ushahidi/SiLCC-PHP-Binding)
