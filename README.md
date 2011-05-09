@@ -136,10 +136,7 @@ Easy Setup on Rackspace (For Development)
 
 1. Create an instance of Ubuntu 10.04 LTS (Lucid Lynx).
 2. Open up an SSH terminal to your new instance.
-3. Retrieve the deployment script: ``wget --no-check-certificate https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid.sh``
-4. Make it executable: ``chmod +x ubuntu-lucid.sh``
-5. Run it: ``./ubuntu-lucid.sh``
-6. Open your browser and point it to: ``http://ip.of.your.new.instance:5002``
+3. Run the deployment script: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid.sh | bash``
 
 Bindings
 --------
