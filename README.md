@@ -71,9 +71,6 @@ of the Treebank Corpus for the part-of-speech tagger to work:
 6) Create the database. If using MySQL:
 
     $ mysql -u root -p
-
-Once in the mysql environment:
-
     mysql> create database silcc default charset utf8;
     mysql> grant all on silcc.* to silcc@localhost identified by 'password';
 
@@ -130,6 +127,9 @@ Since the manage.py will be specific to your local instance it is not included i
 
 5) The Web Service API needs to have one or more valid keys in the apikey table.
 For testing purposes add a key with a valid_domains value of ``*`` (valid from all domains)
+
+    $ mysql -u root -p
+    mysql> insert into apikey set keystr = 'AAAABBBB', valid_domains = '*';
 
 Bindings
 --------
