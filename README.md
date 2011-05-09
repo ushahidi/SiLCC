@@ -135,7 +135,7 @@ Easy Development Setup on Rackspace
 -----------------------------------
 
 1. Create an instance of Ubuntu 10.04 LTS (Lucid Lynx).
-2. Open up an SSH terminal to your new instance.
+2. Open up a SSH terminal to your new instance.
 3. Run the deployment script: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid.sh | bash``
 
 Bindings
