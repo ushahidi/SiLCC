@@ -62,15 +62,7 @@ Issue the following to install nltk into your virtualenv.
 4) After installing nltk you need to download one
 of the Treebank Corpus for the part-of-speech tagger to work:
 
-    $ python
-    >>> import nltk
-    >>> nltk.download()
-
-This will take you into an interactive download environment. Select ``d`` for Download. The identifier you want to download is:
-
-    maxent_treebank_pos_tagger
-
-After downloading it select ``q`` for Quit and exit python using Ctrl+D.
+    $ python -c "import nltk;nltk.download('maxent_treebank_pos_tagger')"
 
 5) Install numpy. On Debian-based distributions the easiest is to install the package:
 
