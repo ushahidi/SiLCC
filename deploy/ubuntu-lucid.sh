@@ -12,10 +12,13 @@ python setup.py develop
 cd ..
 wget http://nltk.googlecode.com/files/nltk-2.0b8.zip
 unzip nltk-2.0b8.zip
+rm -f nltk-2.0b8.zip
 cd nltk-2.0b8
 python setup.py install
 python -c "import nltk;nltk.download('maxent_treebank_pos_tagger')"
-cd ../SiLCC
+cd ..
+rm -rf nltk-2.0b8
+cd SiLCC
 echo "create database silcc default charset utf8;grant all on silcc.* to silcc@localhost identified by 'password';" | mysql -u root -p
 python db_repository/manage.py version_control mysql://silcc:password@localhost:3306/silcc
 migrate manage manage.py --repository=db_repository --url=mysql://silcc:password@localhost:3306/silcc
