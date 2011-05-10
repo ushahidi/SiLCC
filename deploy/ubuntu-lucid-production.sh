@@ -15,7 +15,6 @@ unzip nltk-2.0b8.zip
 rm -f nltk-2.0b8.zip
 cd nltk-2.0b8
 python setup.py install
-python -c "import nltk;nltk.download('maxent_treebank_pos_tagger')"
 cd ..
 rm -rf nltk-2.0b8
 cd SiLCC
@@ -24,4 +23,10 @@ python db_repository/manage.py version_control mysql://silcc:password@localhost:
 migrate manage manage.py --repository=db_repository --url=mysql://silcc:password@localhost:3306/silcc
 python manage.py upgrade
 echo "insert into apikey set keystr = 'AAAABBBB', valid_domains = '*';" | mysql -u root -p silcc
+adduser --disabled-password --gecos "" silcc
+chown -R silcc SiLCC
+mv SiLCC /home/silcc/
+su silcc
+python -c "import nltk;nltk.download('maxent_treebank_pos_tagger')"
+cd /home/silcc/SiLCC
 paster serve --daemon prod.ini
