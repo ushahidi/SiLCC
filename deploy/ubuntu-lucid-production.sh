@@ -24,6 +24,7 @@ migrate manage manage.py --repository=db_repository --url=mysql://silcc:password
 python manage.py upgrade
 echo "insert into apikey set keystr = 'AAAABBBB', valid_domains = '*';" | mysql -u root -p silcc
 adduser --disabled-password --gecos "" silcc
+cd ..
 chown -R silcc SiLCC
 mv SiLCC /home/silcc/
 su silcc
