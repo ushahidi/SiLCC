@@ -139,7 +139,7 @@ Easy Development Setup on Rackspace
 3. Run one of the two deployment scripts, depending on the type of installation. Each time you are prompted for a password, this will be the MySQL root password of your choosing. It should be safe to leave this blank.
     * Development: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-development.sh | bash``
     * Production: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-production.sh | bash``
-4. Open your browser and point it to: ``http://ip.or.hostname.of.your.new.instance/``
+4. Open your browser and point it to: ``http://ip.or.hostname.of.your.new.instance:5002/``
 
 Bindings
 --------
