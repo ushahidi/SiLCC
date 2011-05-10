@@ -24,4 +24,4 @@ python db_repository/manage.py version_control mysql://silcc:password@localhost:
 migrate manage manage.py --repository=db_repository --url=mysql://silcc:password@localhost:3306/silcc
 python manage.py upgrade
 echo "insert into apikey set keystr = 'AAAABBBB', valid_domains = '*';" | mysql -u root -p silcc
-paster serve --daemon development.ini
+paster serve --daemon prod.ini
