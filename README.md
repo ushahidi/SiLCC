@@ -138,7 +138,7 @@ Easy Development Setup on Rackspace
 2. Open up a SSH terminal to your new instance.
 3. Run one of the two deployment scripts, depending on the type of installation:
     * Development: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-development.sh | bash``
-    * Production: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-development.sh | bash``
+    * Production: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-production.sh | bash``
 4. Open your browser and point it to: ``http://ip.of.your.new.instance:5002``
 
 Bindings
