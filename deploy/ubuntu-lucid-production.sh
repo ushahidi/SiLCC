@@ -9,6 +9,9 @@ easy_install sqlalchemy-migrate==0.5.4
 git clone https://github.com/ushahidi/SiLCC.git
 cd SiLCC
 python setup.py develop
+cp deploy/silcc /etc/init.d/silcc
+chmod +x /etc/init.d/silcc
+update-rc.d silcc defaults
 cd ..
 wget http://nltk.googlecode.com/files/nltk-2.0b8.zip
 unzip nltk-2.0b8.zip
@@ -29,5 +32,5 @@ chown -R silcc SiLCC
 mv SiLCC /home/silcc/
 su silcc
 python -c "import nltk;nltk.download('maxent_treebank_pos_tagger')"
-cd /home/silcc/SiLCC
-paster serve --daemon prod.ini
+exit
+/etc/init.d/silcc start

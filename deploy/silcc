@@ -6,12 +6,14 @@ case "$1" in
     su silcc
     cd /home/silcc/SiLCC
     paster serve --daemon prod.ini
+    exit
     ;;
   stop)
     echo "Stopping SiLCC"
     su silcc
     cd /home/silcc/SILCC
     paster serve prod.ini stop
+    exit
     ;;
   *)
     echo "Usage: /etc/init.d/silcc {start|stop}"
