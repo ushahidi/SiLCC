@@ -1,0 +1,22 @@
+#!/bin/bash
+
+case "$1" in
+  start)
+    echo "Starting SiLCC"
+    su silcc
+    cd /home/silcc/SiLCC
+    paster serve --daemon prod.ini
+    ;;
+  stop)
+    echo "Stopping SiLCC"
+    su silcc
+    cd /home/silcc/SILCC
+    paster serve prod.ini stop
+    ;;
+  *)
+    echo "Usage: /etc/init.d/silcc {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
