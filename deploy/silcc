@@ -3,11 +3,11 @@
 case "$1" in
   start)
     echo "Starting SiLCC"
-    echo "cd /home/silcc/SiLCC;paster serve --daemon prod.ini" | sudo -u silcc bash
+    echo "export HOME=/home/silcc;cd /home/silcc/SiLCC;paster serve --daemon prod.ini" | sudo -u silcc bash
     ;;
   stop)
     echo "Stopping SiLCC"
-    echo "cd /home/silcc/SiLCC;paster serve prod.ini stop" | sudo -u silcc bash
+    echo "export HOME=/home/silcc;cd /home/silcc/SiLCC;paster serve prod.ini stop" | sudo -u silcc bash
     ;;
   *)
     echo "Usage: /etc/init.d/silcc {start|stop}"
