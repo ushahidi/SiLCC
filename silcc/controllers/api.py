@@ -1,6 +1,6 @@
 import logging
 import datetime
-
+import re
 import simplejson
 
 from pylons import request, response, session, tmpl_context as c, url, config
@@ -65,6 +65,10 @@ class ApiController(BaseController):
             return "001 Missing Parameter: Required parameter is not supplied (text)."
 
         log.info('Text to be tagged: %s', text)
+
+        # Strip HTML out of text.
+        text = re.sub(r'<[^>]*>', '', text)
+
         tags = TweetTagger.tag(text)
         log.info('Tags extracted: %s', str(tags))
 
