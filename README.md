@@ -103,7 +103,7 @@ empty database, and then place it under version control.
 
 2) now place your database under version control with:
 
-    $ python db_repository/manage.py version_control  mysql://silcc:password@localhost:3306/silcc
+    $ python db_repository/manage.py version_control mysql://silcc:password@localhost:3306/silcc
 
 This will create the migrate_version table in your database and set the
 initial version to 0.
