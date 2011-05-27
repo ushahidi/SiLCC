@@ -131,8 +131,8 @@ For testing purposes add a key with a valid_domains value of ``*`` (valid from a
     $ mysql -u root -p
     mysql> insert into apikey set keystr = 'AAAABBBB', valid_domains = '*';
 
-Easy Development Setup on Rackspace
------------------------------------
+Deploying on Rackspace
+----------------------
 
 1. Create an instance of Ubuntu 10.04 LTS (Lucid Lynx).
 2. Open up a SSH terminal to your new instance.
