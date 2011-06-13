@@ -146,4 +146,4 @@ Bindings
 
 For your convenience, the following language-specific API "proxy" libraries are available:
 
-* [SiLCC-PHP-Binding](https://github.com/ushahidi/SiLCC-PHP-Binding)
+* [SiLCC-PHP-Binding](https://github.com/ushahidi/swift-lib/tree/master/silcc/php)
