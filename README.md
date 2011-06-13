@@ -141,9 +141,9 @@ Deploying on Rackspace
     * Production: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-production.sh | bash``
 4. Open your browser and point it to: ``http://ip.or.hostname.of.your.new.instance:5002/``
 
-Bindings
---------
+Libraries
+---------
 
 For your convenience, the following language-specific API "proxy" libraries are available:
 
-* [SiLCC-PHP-Binding](https://github.com/ushahidi/swift-lib/tree/master/silcc/php)
+* [PHP](https://github.com/ushahidi/swift-lib/tree/master/silcc/php)
