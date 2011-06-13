@@ -7,7 +7,7 @@ Synopsis
 SiLCC aims to provide a learning NLP based relevancy filter/tagger/classifier that is 
 applied to the various information sources that Swift aggregates (RSS, twitter, SMS). 
 
-This software is released under the [GNU Lesser General Public License](http://www.gnu.org/copyleft/lesser.html).
+This software is released under the [GNU General Public License](http://www.gnu.org/licenses/gpl.html).
 
 Change Log
 --------
