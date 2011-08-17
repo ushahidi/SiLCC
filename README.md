@@ -147,3 +147,12 @@ Libraries
 For your convenience, the following language-specific API "proxy" libraries are available:
 
 * [PHP](https://github.com/ushahidi/swift-lib/tree/master/silcc/php)
+
+## Support
+
+* [SwiftRiver Mailing List](http://groups.google.com/group/swiftriver)
+* [#ushahidi on Freenode](http://irc.lc/freenode/ushahidi)
+
+## See Also
+
+* [Ushahidi](http://ushahidi.com/)
