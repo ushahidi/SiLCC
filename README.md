@@ -137,8 +137,8 @@ Deploying on Rackspace
 1. Create an instance of Ubuntu 10.04 LTS (Lucid Lynx).
 2. Open up a SSH terminal to your new instance.
 3. Run one of the two deployment scripts, depending on the type of installation. Each time you are prompted for a password, this will be the MySQL root password of your choosing. It should be safe to leave this blank.
-    * Development: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-development.sh | bash``
-    * Production: ``curl https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-production.sh | bash``
+    * Development: ``curl -L https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-development.sh | bash``
+    * Production: ``curl -L https://github.com/ushahidi/SiLCC/raw/master/deploy/ubuntu-lucid-production.sh | bash``
 4. Open your browser and point it to: ``http://ip.or.hostname.of.your.new.instance:5002/``
 
 Libraries
